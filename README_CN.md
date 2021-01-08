@@ -16,6 +16,10 @@
 
 安卓已经增加权限申请，但如果还是闪退请手动确认下相关权限是否允许。
 
+android studio编译出现ndk版本问题
+```code
+在app/build.gradle文件中ndk配置项前添加：ndkVersion '本地安装的ndk相应版本号'
+```
 > iOS
 ```code
 从界面中选择需要测试的模型。
@@ -55,49 +59,6 @@
 * AS版本不一样可能编译会有各种问题，如果编译错误无法解决、建议使用AS4.0以上版本尝试一下。
 
 懒人本地转换(不会上传模型): [xxxx -> ncnn] https://convertmodel.com/
-
-:art: 截图<br/>
-
-> Android
-
-| mbnv2-yolov3-nano | yolov4-tiny | yolov5s |
-|-------------------|-------------|---------|
-|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_Meizu16x_mobilenetv2_yolov3_nano.jpg"/>|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_Meizu16x_yolov4_tiny.jpg"/>|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_Meizu16x_yolov5s.jpg"/>|
-
-| simple_pose | yolact | chineseocr_lite_01 |
-|-------------------|-------------|---------|
-|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_Meizu16x_simple_pose.jpg"/>|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_Meizu16x_yolact.jpg"/>|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_meizu16x_chineseocr_lite_01.jpg"/>|
-
-| chineseocr_lite_02 | ENet | yoloface500k-landmark106 |
-|-------------------|-------------|---------|
-|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_meizu16x_chineseocr_lite_02.jpg"/>|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_Meizu16x_ENet.jpg"/>|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_Meizu16x_yoloface500k-landmark106.jpg"/>|
-
-|  dbface | mbnv2_fcn | mbnv3_seg_small |
-|-------------------|-------------|---------|
-| <img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_Meizu16x_dbface.jpg"/>|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_Meizu16x_MBNFCN.jpg"/>|<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/Android_Meizu16x_MBNV3_Seg_small.jpg"/>|
-
-|  yolov5s_custom_op | nanodet | yolo-fastest-xl |
-|-------------------|-------------|---------|
-| none | none | none |
-
-> iOS
-
-|  mbnv2-yolov3-nano | yolov4-tiny | yolov5s |
-|-------------------|-------------|---------|
-| <img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/iOS_iPhone6sp_mobilenetv2_yolov3_nano.jpg"/> |<img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/iOS_iPhone6sp_yolov4_tiny.jpg"/>| <img width="270" height="500" src="https://github.com/cmdbug/YOLOv5_NCNN/blob/master/Screenshots/iOS_iPhone6sp_yolov5s.jpg"/> |
-
-|  yolov5s_custom_op | nanodet | yolo-fastest-xl |
-|-------------------|-------------|---------|
-| none | none | none |
-
-|  mbnv2_fcn | mbnv3_seg_small | simple_pose |
-|-------------------|-------------|---------|
-| none | none | none |
-
-|  yolact | yoloface500k-landmark106 | dbface |
-|-------------------|-------------|---------|
-| none | none | none |
-
 
 感谢:<br/>
 - sunnyden, dog-qiuqiu, ..., nihui
